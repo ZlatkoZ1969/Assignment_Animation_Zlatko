@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+
+            #box-1 {
+                width: 800px;
+                height: 600px;
+                background-color: #050210;
+                margin: 20px auto;
+            }
+
+            #circle-1 {
+                    position: absolute;
+                    color: white;
+                    bottom: 380px;
+                    width: 400px;
+                    height: 400px;
+
+                    margin: 0 auto;
+                    left: 0;
+                    right: 0;
+
+                    border: 1px solid #050210;
+                    border-radius: 100%;
+                    opacity: 1;
+                    filter: hue-rotate(20deg);
+                    background: repeating-conic-gradient(#FB5DAD, #55FB9F, #B97AFF);
+                    
+
+                    
+                    animation-name: my-animation;
+                    animation-duration: 1s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                    animation-direction: normal;
+                    animation-play-state: running;
+                    
+            }
+
+            /*@keyframes my-animation {
+                        0% {
+                            transform: rotate(0deg);
+                        }
+
+                        25% {
+                            transform: rotate(90deg);
+                        }
+
+                        50% {
+                            transform: rotate(180deg);
+                        }
+
+                        75% {
+                            transform: rotate(270deg);
+                        }
+
+                        100% {
+                            transform: rotate(360deg);
+                        }
+                    }*/
+
+                    @keyframes my-animation {
+                        from {
+                            transform: rotate(0deg);
+                        }
+
+                        to {
+                            transform: rotate(360deg);
+                        }
+                    }
+
+            #circle-2 {
+                position: relative;
+                color: #050210;
+                bottom: 495px;
+                width: 360px;
+                height: 360px;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+
+                border: 1px solid #050210;
+                border-radius: 100%;
+                background-color: #050210;
+            }
+
+            /*#box-1 {
+                    background: repeating-conic-gradient(#FB5DAD 0%, #55FB9F 5%, #B97AFF);
+                }*/
+
+        </style>
+
+    </head>
+    <body>
+        <div id="box-1" class="box"></div>
+        <div id="circle-1" class="circle"></div>
+        <div id="circle-2" class="circle"></div>
+    </body>
+</html>
